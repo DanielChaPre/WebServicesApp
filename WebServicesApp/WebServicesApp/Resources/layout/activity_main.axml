@@ -1,60 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:minWidth="25px"
-	android:minHeight="25px">
+	android:layout_height="match_parent">
 	<ScrollView
-	xmlns:android="http://schemas.android.com/apk/res/android"
-		android:layout_width="match_parent"
-		android:layout_height = "match_parent"
-		android:fillViewport="true"
-		>
-	<LinearLayout
-		android:orientation="vertical"
-		android:minWidth="25px"
-		android:minHeight="25px"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:id="@+id/linearLayout1" >
-		<ImageView
-			android:src="@android:drawable/ic_menu_gallery"
+			xmlns:android="http://schemas.android.com/apk/res/android"
 			android:layout_width="match_parent"
-			android:layout_height="176.0dp"
-			android:id="@+id/imgvSexo" />
-		<TextView
-			android:text="Nombre"
+			android:layout_height = "match_parent"
+			android:fillViewport="true">
+		<RelativeLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/txtNombre"
-			android:textSize="25dp"/>
-		<TextView
-			android:text="Edad"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/txtEdad" 
-			android:textSize="25dp"/>
-		<TextView
-			android:text="Ocupación"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/txtOcupacion" 
-			android:textSize="25dp"/>
-		<TextView
-			android:text="Sexo"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/txtSexo"
-			android:textSize="25dp"/>
-		<TextView
-			android:text="Usuario"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/txtUsuario"
-			android:textSize="25dp"/>
-	</LinearLayout>
-		</ScrollView>
-</RelativeLayout>
+			android:layout_height="match_parent"
+			android:id="@+id/relativeLayout1">
+
+			<FrameLayout
+				android:id="@+id/FragmentContainer"
+				android:layout_width="match_parent"
+				android:layout_height="423.5dp"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="30dp">
+			</FrameLayout>
+			<LinearLayout
+				android:orientation="vertical"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:id="@+id/linearLayout1"
+				android:layout_height="79.0dp"
+				android:layout_marginTop="450dp">
+				<Button
+					android:text="Registrar"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/btnRegistrar"
+					android:layout_marginTop="15dp"
+					android:background="#ff00e676"
+					android:textColor="#ff616161" />
+			</LinearLayout>
+		</RelativeLayout>
+	</ScrollView>
+</LinearLayout>
+	
+	
+		
